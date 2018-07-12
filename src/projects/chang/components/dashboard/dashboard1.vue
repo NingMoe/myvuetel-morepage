@@ -2,6 +2,8 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <button @click="goGsp">去gsp页面</button>
+    <button @click="go404">去404页面</button>
+    <button @click="gokcode">goK码页面</button>
   </div>
 </template>
 
@@ -16,6 +18,12 @@ export default {
   methods: {
     goGsp() {
       window.location.href = 'gsp.html?name=gsp';
+    },
+    go404() {
+      window.location.href = 'page404.html?name=gsp';
+    },
+    gokcode() {
+      window.location.href = 'kcode.html?name=gsp';
     }
   }
 };
