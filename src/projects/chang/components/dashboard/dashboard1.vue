@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <a href="chang.html">去chang页面</a>
+    <a href="gsp.html">去gsp</a>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   name: 'Dashboard1',
   data() {
     return {
-      msg: '我是gsp项目的dashboard1'
+      msg: '我是chang项目的dashboard1'
     };
   }
 };
