@@ -26,6 +26,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
+    // filename: utils.assetsPath('js/[name]/[name].[chunkhash].js'),
+    // chunkFilename: utils.assetsPath('js/[name]/[id].[chunkhash].js')
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
@@ -83,7 +85,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      minChunks (module) {
+      minChunks(module) {
         // any required modules inside node_modules are extracted to vendor
         return (
           module.resource &&

@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <a href="gsp.html">去gsp</a>
+    <button @click="goGsp">去gsp页面</button>
   </div>
 </template>
 
@@ -12,6 +12,11 @@ export default {
     return {
       msg: '我是chang项目的dashboard1'
     };
+  },
+  methods: {
+    goGsp() {
+      window.location.href = 'gsp.html?name=gsp';
+    }
   }
 };
 </script>
