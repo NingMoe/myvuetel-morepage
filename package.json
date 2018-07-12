@@ -8,8 +8,7 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js",
-    "mock": "json-server src/mock/data.json --watch --port 8888 "
+    "build": "node build/build.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -78,7 +77,8 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "glob": "^7.0.3"
   },
   "engines": {
     "node": ">= 6.0.0",
