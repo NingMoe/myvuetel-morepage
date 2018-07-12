@@ -22,9 +22,12 @@ const createLintingRule = () => ({
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
-  entry: {
-    app: './src/main.js'
-  },
+  // entry: {
+  //   app: './src/main.js'
+  // },
+  /* 修改部分 ---------------- 开始 */
+  entry: utils.entries(),
+  /* 修改部分 ---------------- 结束 */
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -43,9 +46,8 @@ module.exports = {
       '@scss': path.resolve(__dirname, '../src/common/scss'),
       '@js': path.resolve(__dirname, '../src/common/js'),
       '@utils': path.resolve(__dirname, '../src/common/utils'),
-      '@VBusiness': path.resolve(__dirname, '../src/components/business'),
-      '@VBase': path.resolve(__dirname, '../src/base'),
-      '@VDashboard': path.resolve(__dirname, '../src/components/dashboard'),
+      '@Base': path.resolve(__dirname, '../src/base'),
+      '@projects': path.resolve(__dirname, '../src/projects')
     }
   },
   // 引入jquery

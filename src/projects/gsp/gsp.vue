@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    <img src="../../assets/logo.png">
-    <router-view></router-view>
+    <dashboard1></dashboard1>
   </div>
 </template>
 
 <script>
+import Dashboard1 from './components/dashboard/dashboard1';
 export default {
-  name: 'app'
-}
+  name: 'Gsp',
+  components: { Dashboard1 }
+};
 </script>
 
 <style>
