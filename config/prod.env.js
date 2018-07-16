@@ -14,3 +14,8 @@ module.exports = {
 
 
 // 通过上述设置，就保证了，前端的接口地址，在开发环境和生产环境，是一致的，如上述user接口，前端均写user即可
+
+// 地址这样写的，不会被proxy代理
+// const url = 'https://accountsym.phicomm.com/ddwservice/v1/balance';
+// 地址这样写的，会被proxy代理
+// const url = 'ddwservice/v1/balance';

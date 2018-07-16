@@ -47,7 +47,8 @@ function getRate() {
 };
 
 function getNowDDw() {
-  const url = 'https://accountsym.phicomm.com/ddwservice/v1/balance';
+  // const url = 'https://accountsym.phicomm.com/ddwservice/v1/balance';
+  const url = 'ddwservice/v1/balance';
   // const url = 'http://172.17.84.239:80/ddwservice/v1/balance';
   const time = Date.now();
   const params = { _: time, activityID: '2' };
