@@ -3,7 +3,7 @@ import { insertArray } from '@utils/myHandleArr';
 
 const SEARCH_KEY = '__search__';
 
-// 最大的存储条数
+// 最大的存储条数111
 const SEARCH_MAX_LENGTH = 15;
 
 // 最近播放歌曲
